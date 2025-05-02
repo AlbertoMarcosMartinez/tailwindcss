@@ -9,25 +9,33 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-black via-sky-900 to-gray-800">
     <div class="max-w-xl mx-auto min-h-dvh border border-black">
-       <header class="text-white">
-        <section class="flex gap-2 justify-center mt-5">
-            <a class="bg-white text-white p-3 rounded-full hover:bg-blue-700 inline-flex items-center justify-center hover:scale-100 transition-transform">
-                <img src="./assets/twitter.svg" class="h-6 w-6" alt="Twitter icon"/>
-            </a>
-            <a class="bg-gradient-to-br from-purple-600 to-pink-500 text-white p-3 rounded-full hover:from-purple-700 hover:to-pink-600 inline-flex items-center justify-center w-12 h-12 transition-colors">
-                <img src="./assets/instagram.svg" class="h-6 w-6" alt="Instagram icon"/>    
-            </a>
-            <a class="bg-white text-white p-3 rounded-full hover:bg-blue-700 inline-flex items-center justify-center w-12 h-12 transition-colors">
-                <img src="./assets/linkedin.svg" class="h-6 w-6" alt="Twitter icon"/>
-            </a>
-            <a class="bg-white text-white p-3 rounded-full hover:from-purple-700 hover:to-pink-600 inline-flex items-center justify-center w-12 h-12 transition-colors">
-                <img src="./assets/pinterest.svg" class="h-6 w-6" alt="Instagram icon"/>                    
-            </a>
-            <a class="bg-white text-white p-3 rounded-full hover:from-purple-700 hover:to-pink-600 inline-flex items-center justify-center w-12 h-12 transition-colors">
-                <img src="./assets/youtube.svg" class="h-6 w-6" alt="Instagram icon"/>                    
-            </a>
-        </section>
-       </header>
+        <div class="relative">
+            <img 
+                src="./assets/img-me.jpeg" 
+                class="w-48 h-48 rounded-full mx-auto mt-8 object-cover 
+                       [mask-image:linear-gradient(to_bottom,white_70%,transparent_100%),radial-gradient(circle_at_center,white_70%,transparent_100%)]"
+                alt="Alberto Marcos"
+            />
+            <header class="text-white -mt-8 relative z-10">
+                <section class="flex gap-2 justify-center mt-5">
+                    <a class="bg-white text-white p-3 rounded-full hover:bg-blue-700 inline-flex items-center justify-center hover:scale-100 transition-transform">
+                        <img src="./assets/twitter.svg" class="h-6 w-6" alt="Twitter icon"/>
+                    </a>
+                    <a class="bg-gradient-to-br from-purple-600 to-pink-500 text-white p-3 rounded-full hover:from-purple-700 hover:to-pink-600 inline-flex items-center justify-center w-12 h-12 transition-colors">
+                        <img src="./assets/instagram.svg" class="h-6 w-6" alt="Instagram icon"/>    
+                    </a>
+                    <a class="bg-white text-white p-3 rounded-full hover:bg-blue-700 inline-flex items-center justify-center w-12 h-12 transition-colors">
+                        <img src="./assets/linkedin.svg" class="h-6 w-6" alt="Twitter icon"/>
+                    </a>
+                    <a class="bg-white text-white p-3 rounded-full hover:from-purple-700 hover:to-pink-600 inline-flex items-center justify-center w-12 h-12 transition-colors">
+                        <img src="./assets/pinterest.svg" class="h-6 w-6" alt="Instagram icon"/>                    
+                    </a>
+                    <a class="bg-white text-white p-3 rounded-full hover:from-purple-700 hover:to-pink-600 inline-flex items-center justify-center w-12 h-12 transition-colors">
+                        <img src="./assets/youtube.svg" class="h-6 w-6" alt="Instagram icon"/>                    
+                    </a>
+                </section>
+            </header>
+        </div>
     </div>
     <main>
         <p>Aquí van los super cursos de Tailwind CSS</p>
