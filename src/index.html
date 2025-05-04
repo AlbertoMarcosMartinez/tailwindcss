@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en" class="overflow-x-hidden">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">        
     <link rel="stylesheet" href="../assets/output.css">
     <title>Tailwind CSS Demo</title>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-black via-sky-900 to-gray-800">
-    <div class="min-w-xl">
+<body class="min-h-screen bg-gradient-to-br from-black via-sky-900 to-gray-800 overflow-x-hidden">
+    <div class="w-full">
         <div class="relative">
             <img 
                 src="../assets/img-me.jpeg" 
@@ -48,15 +48,15 @@
                         <img src="../assets/youtube.svg" class="h-6 w-6" alt="Instagram icon"/>                    
                     </a>
                 </section>
-                <section class="text-center mt-2 text-sm text-secondary px-4 text-balance">
+                <section class="text-center mt-2 mb-2 text-sm text-secondary px-4 text-balance">
                     <p>Humano,  apasionado por la tecnología y la programación. </p> 
                 </section>
             </header>
         </div>
     </div>
-    <main class="pt-4 px-4 max-w-7xl mx-auto">
+    <main class="w-full px-4 sm:max-w-7xl mx-auto">
         <!-- About Me Section -->
-        <div class="grid grid-cols-1 gap-4 mb-8">
+        <div class="grid grid-cols-1 gap-4 mb-2">
             <div class="bg-gradient-to-br from-slate-900 to-slate-800 shadow-xl rounded-xl p-8 
                         hover:from-slate-800 hover:to-slate-700 transition-all duration-500 
                         hover:scale-[1.02] cursor-pointer group">
@@ -68,16 +68,14 @@
         </div>
 
         <!-- Skills Grid -->
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
             <!-- React Card -->
-            <div class="col-span-2 bg-gradient-to-br from-cyan-600 to-blue-800 shadow-xl rounded-xl p-6 
+            <div class="md:col-span-4 bg-gradient-to-br from-cyan-600 to-blue-800 shadow-xl rounded-xl p-6 
                         hover:from-cyan-500 hover:to-blue-700 transition-all duration-500 
                         hover:scale-[1.02] group cursor-pointer">
                 <div class="flex items-center gap-4">
                     <img src="../assets/react.svg" 
-                         class="absolute -right-4 -bottom-4 -rotate-6 size-28 
-                         group-hover:-rotate-12 group-hover:scale-120 transition-transform" 
-                         width="100" height="100"
+                         class="h-12 w-12 group-hover:scale-110 transition-transform" 
                          alt="React icon"/>
                     <div class="text-white">
                         <h2 class="text-2xl font-bold group-hover:translate-x-2 transition-transform">React</h2>
@@ -87,7 +85,7 @@
             </div>
 
             <!-- Git Card -->
-            <div class="bg-gradient-to-br from-amber-600 to-orange-700 shadow-xl rounded-xl p-6 
+            <div class="md:col-span-2 bg-gradient-to-br from-amber-600 to-orange-700 shadow-xl rounded-xl p-6 
                         hover:from-amber-500 hover:to-orange-600 transition-all duration-500 
                         hover:scale-[1.02] group cursor-pointer">
                 <div class="flex items-center gap-4">
@@ -102,7 +100,7 @@
             </div>
 
             <!-- C# Card -->
-            <div class="bg-gradient-to-br from-indigo-600 to-purple-700 shadow-xl rounded-xl p-6 
+            <div class="md:col-span-3 bg-gradient-to-br from-indigo-600 to-purple-700 shadow-xl rounded-xl p-6 
                         hover:from-indigo-500 hover:to-purple-600 transition-all duration-500 
                         hover:scale-[1.02] group cursor-pointer">
                 <div class="flex items-center gap-4">
@@ -117,7 +115,7 @@
             </div>
 
             <!-- HTML/CSS/JS Card -->
-            <div class="col-span-2 bg-gradient-to-br from-rose-600 to-pink-700 shadow-xl rounded-xl p-6 
+            <div class="md:col-span-3 bg-gradient-to-br from-rose-600 to-pink-700 shadow-xl rounded-xl p-6 
                         hover:from-rose-500 hover:to-pink-600 transition-all duration-500 
                         hover:scale-[1.02] group cursor-pointer">
                 <div class="flex items-center gap-4">
@@ -132,7 +130,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="w-full text-center text-gray-400 py-8 mt-8">
         <p>Alberto Marcos - Copyright &copy; 2025</p>    
     </footer>
 </body>
